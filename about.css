@@ -1,0 +1,9 @@
+.about h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.about div {
+  padding: 15px;
+  font-family: sans-serif;
+}

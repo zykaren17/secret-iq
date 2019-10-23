@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css">
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/AP.js"></script>
+  <script type="text/javascript" src="scripts/forum.js"></script>
+  <script type="text/javascript" src="scripts/scrollDown.js"></script>
+</head>
+
+<body>
+  <!--
+    Image Source: https://cdn.pixabay.com/photo/2017/07/31/16/12/laptop-2558666_1280.jpg
+    Image Description: Landing Page Photo of Study Space
+   -->
+  <img id="home-pic" src="../www/images/home.jpg" alt="HOME">
+
+  <!--
+  Image Source: http://secretsmartiq.com/wp-content/uploads/2017/09/Official-Logo.png
+  Image Description: SecretIQ Logo
+-->
+  <a href="index.html">
+    <img class="secretiq-logo" src="images/Official-Logo.png" alt="Company Logo">
+  </a>
+
+  <header>
+    <nav>
+      <ul>
+        <li id="aboutNavItem" class="navItem">
+          <hr>
+          <a href="about.html">About</a>
+          <!--
+        Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+        Image Description: A pencil icon.
+      -->
+          <img id="about-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+          <hr>
+        </li>
+        <li id="resourcesNavItem" class="navItem">
+          <a id="resources" href="#">Resources</a>
+          <div class="cloud-drop hidden">
+            <!--
+        Image Source: https://www.clipartmax.com/png/middle/9-97860_cloud-outline-clip-art-at-clipart-library-cartoon-cloud-transparent-png.png
+        Image Description: Cartoon cloud with round shape.
+      -->
+            <img class="cloud" src="../www/images/cloud.png" alt="cloud">
+            <ul id="resourcesDropdown" class="nav-dropdown">
+              <li class="APItem"><a href="APWorld.html">AP World History</a></li>
+              <li class="APItem"><a href="APUSH.html">AP US History</a></li>
+            </ul>
+          </div>
+          <img id="resources-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+          <hr>
+        </li>
+        <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+        <li id="forumNavItem" class="navItem">
+          <a href="forum.html">Forum</a>
+          <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+          <img id="forum-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+          <hr>
+        </li>
+        <li id="contactNavItem" class="navItem">
+          <a href="contact.html">Contact</a>
+          <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+          <img id="contact-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+          <hr>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <h1 id="index-title">Acing the AP</h1>
+
+  <h2 id="index-subtitle">Hundreds of Resources at Your Fingertips</h2>
+
+  <h2 id="page-title">Forum for Resources</h2>
+
+  <article>
+    <h1>FORUM</h1>
+    <p>
+      This is a place for teachers to share resources that have helped their students on the AP US History and AP World
+      History exams. If you are a teacher, please share some of your lessons and study tips!
+    </p>
+
+    <div class="sample_post">
+      <img class="profile_pic" alt="Picture of teacher" src="images/adult-beard-boy-220453.jpg" />
+      <!-- 
+        Image Source: https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+        Image Description: Forum Teacher #1
+      -->
+      <p class="sample-text">
+        My students found reviewing slides from my AP US History class to be very helpful in the week leading up to the
+        exam. In addition, they used practice problems that I've compiled over my years of teaching. Please email me
+        at: teacher@email.com to find out more!
+      </p>
+    </div>
+
+    <div class="sample_post">
+      <!-- 
+        Image Source: https://images.pexels.com/photos/734168/pexels-photo-734168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+        Image Description: Forum Teacher #2
+       -->
+      <img class="profile_pic" alt="Picture of teacher" src="images/pexels-photo-734168.jpeg" />
+      <p class="sample-text">
+        My students found reviewing slides from my AP US History class to be very helpful in the week leading up to the
+        exam. In addition, they used practice problems that I've compiled over my years of teaching. Please email me
+        at: ebs6@sihs.com to find out more!
+      </p>
+    </div>
+
+    <h2 class="forumh2">Want to contribute? </h2>
+
+    <form id="user-form" method="POST" novalidate>
+      <ul class="form-list">
+
+        <li class="form-item">
+          <label for="first_name"> Name:</label>
+          <input required type="text" id="first_name" name="first-name" minlength="1" maxlength="25">
+          <div class="failure-message first_name_error hidden">
+            Please fix first name, input must be between 1 and 25 characters.
+          </div>
+        </li>
+
+        <li class="form-item">
+          <label for="mail">E-mail:</label>
+          <input required type="email" id="mail" name="user_mail">
+          <div class="failure-message email_error hidden">
+            Please input a valid email.
+          </div>
+        </li>
+
+        <li class="form-item">
+          <label for="school">School:</label>
+          <input required type="text" id="school" name="user_school">
+          <div class="failure-message school_error hidden">
+            Please write your school
+          </div>
+        </li>
+
+        <li class="form-item">
+          <label for="message">Post text:</label>
+          <textarea required id="message" name="user_message" rows="5" cols="22" maxlength="1000" minlength="1" wrap="hard"></textarea>
+          <div class="failure-message message-error hidden">
+            Please write a message.
+          </div>
+        </li>
+
+        <li class="forumbutton">
+          <button type="submit" class="submit">Submit</button>
+        </li>
+      </ul>
+    </form>
+
+    <div class="success-message hidden">
+      Thank you for your input! Your message has been submitted!
+    </div>
+
+
+  </article>
+
+  <footer>
+    Credits:
+    <a href="http://secretsmartiq.com/wp-content/uploads/2017/09/Official-Logo.png">SecretIQ Logo</a>
+    <a href="https://image.flaticon.com/icons/svg/1040/1040228.svg">Pencil Icon</a>
+    <a href="https://www.clipartmax.com/png/middle/9-97860_cloud-outline-clip-art-at-clipart-library-cartoon-cloud-transparent-png.png">Cloud
+      Icon</a>
+    <a href="https://cdn.pixabay.com/photo/2017/07/31/16/12/laptop-2558666_1280.jpg">Study Background</a>
+    <a href="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">Forum
+      Teacher #1</a>
+    <a href="https://images.pexels.com/photos/734168/pexels-photo-734168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">Forum
+      Teacher #2</a>
+  </footer>
+
+</body>
+
+</html>

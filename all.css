@@ -1,0 +1,563 @@
+/* Beginning of Rami's Section: Header and NavBar */
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-size: 100px;
+}
+
+@font-face {
+  font-family: 'Arvo';
+  src: url('../fonts/Arvo-Regular.ttf');
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0e6e3;
+  margin: 0;
+  height: 69px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #d0e6e3;
+  width: 100%;
+}
+
+.home-header {
+  margin-bottom: 250px
+}
+
+img {
+  width: 80px;
+  height: 55px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 23px 0;
+  margin-left: 30px;
+}
+
+.pencil {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.perm-border {
+  border: 2px black solid;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #373737;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: purple;
+}
+
+.APItem {
+ display: flex;
+ flex-direction: column;
+ margin: 0;
+ padding: 0;
+}
+
+.cloud-drop {
+  position: absolute;
+}
+
+.cloud {
+  width: 225px;
+  height: 110px;
+}
+
+.nav-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navItem {
+  display: inline
+}
+
+.secretiq-logo {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 90px;
+  height: 65px;
+}
+
+hr {
+  display: none;
+  margin: 0;
+}
+
+footer {
+  margin: 25px 0;
+  font-family: 'Arvo';
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: purple;
+}
+
+@media (max-width: 600px) {
+
+  header {
+    height: 250px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: -40px;
+    padding: 0px;
+  }
+
+  hr {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+/* End of Rami's Section: Header and NavBar */
+
+h1 {
+  font-family: Verdana, sans-serif;
+  color: #373737;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: Verdana, sans-serif;
+  color: #373737;
+  text-align: center;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Verdana, sans-serif;
+  color: black;
+}
+
+.home {
+  background: inherit;
+}
+
+#home-pic {
+  margin: 0;
+  width: 100%;
+  height: 615px;
+  opacity: .3;
+  position: relative;
+}
+
+#index-title {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: auto;
+  font-family: "Arvo", serif;
+  font-size: 35px;
+  text-decoration: underline;
+  text-decoration-style: double
+}
+
+#index-subtitle {
+  color: #373737;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  font-family: "Arvo";
+  font-size: 25px;
+}
+
+#page-title {
+  color: #373737;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  font-family: 'Arvo';
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #d0e6e3;
+}
+
+.button {
+  position: absolute;
+  top: 47%;
+  width: 20%;
+  text-align: center;
+  transform: translateX(-50%)
+}
+
+
+@media (min-width: 940px) {
+  #home-pic {
+    position: relative;
+    height: 625px;
+  }
+
+  #index-title {
+    font-size: 47px;
+  }
+
+  #index-subtitle {
+    font-size: 28px;
+  }
+
+}
+
+#start-form {
+  vertical-align: center;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  padding-top: 15px;
+}
+
+.button {
+  background-color: #d0e6e3;
+  font-size: 15px;
+  padding: 10px;
+  font-family: Verdana, sans-serif;
+  border-color: #d0e6e3;
+  width: 200px;
+  text-align: center;
+  color: #373737;
+}
+
+.about {
+  text-align: left;
+  font-family: verdana, sans-serif;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about div {
+  padding: 15px;
+}
+
+.aboutboxes {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.aboutbox {
+  width: 20%;
+  border: 1px;
+  height: 200px;
+  background-color: #dbe7db;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px black dotted;
+  border-radius: 10%;
+}
+
+.box-title {
+  margin-top: -15px;
+  display: block;
+  font-family: 'Arvo';
+  margin-bottom: 10px;
+  text-decoration: underline
+}
+
+.aboutbox p{
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #373737;
+}
+
+.aboutinfo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  letter-spacing: 0px;
+  color: #373737;
+}
+
+.form-list{
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.form-item label{
+  padding: .5em 1em .5em 0;
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+
+.forumbutton{
+    text-align: center;
+  width:17.45%;
+  margin: auto auto;
+}
+
+.success-message{
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#00ff00;
+  font-size:120%;
+  padding:1.5%;
+  border:solid;
+  border-radius:3px;
+  border-color:#34bc34;
+  text-align: center;
+}
+
+.failure-message{
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  background-color: white;
+  font-size: 85%;
+  color: red;
+  padding: 1.5%;
+  border: dashed;
+  border-radius: 1px;
+  border-color:red;
+  text-align: center;
+}
+
+.forumh2 {
+  color: #373737;
+  margin-top: 40px;
+}
+
+/* Dray's section : AP Pages */
+
+.ap_subheading {
+  width:85%;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: left;
+  font-size:22px;
+  color: black;
+  margin-top: 20px;
+}
+
+.ap_minititle{
+  font-family: 'Arvo';
+  width: 85%;
+  color:black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.ap_para{
+  width:85%;
+  margin-left: auto;
+margin-right:auto;
+font-size:16px;
+color: #5f6062;
+font-weight:lighter;
+}
+
+.ap_list{
+  width:85%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+/* Styling for AP pages for mobile */
+@media screen and (max-width:600px) {
+  .ap_article{
+    border-width: 1px;
+    width:90%;
+  }
+
+  article{
+    width: 90%;
+  }
+
+  .aboutbox .p1{
+    font-size: 10.5px;
+  }
+
+  .aboutbox .p3{
+    font-size: 11px;
+  }
+
+  .aboutbox .p2{
+    font-size:10px;
+  }
+
+  .ap_title{
+    font-size: 23px;
+  }
+
+  .ap_para{
+    font-size: 15.5px;
+    width: 100%;
+  }
+
+  .ap_minititle{
+    font-size:17px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .ap_subheading {
+    margin-left: 0;
+  }
+
+
+}
+
+/* End of Dray's section */
+
+/*Ciarra's Section: Forum and Contact*/
+/*Contact*/
+
+
+.contact p {
+  text-align: center;
+}
+
+#contact-form {
+  margin: auto auto;
+}
+
+#contact-form div {
+  margin-bottom: 10px;
+}
+
+#contact-form label {
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+}
+
+#contact-form textarea {
+  width: 326px;
+  height: 100px;
+}
+#contact-form input {
+  width: 326px
+}
+#contact-form button.submit {
+  width: 100px;
+  margin-left: 40.4%;
+}
+
+@media (max-width: 900px) {
+  #index-subtitle{
+    font-size:20px;
+  }
+
+  .button {
+    text-align: center;
+  }
+}
+
+/*End Contact*/
+
+/*Forum*/
+
+.sub-title {
+  text-align: center;
+}
+
+article {
+  margin-top: 3%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+.sample_post {
+  background-color: #dbe7db;
+  padding: 1%;
+  margin: 2%;
+  border: 1px black dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_pic {
+  margin: auto 20px;
+  border-radius: 10%;
+  width: 125px;
+  height: 125px;
+}
+
+.sample-text {
+  margin-right: 25px;
+}
+
+@media (max-width: 600px) {
+
+  #contact-form label {
+    width:20%;
+  }
+
+  .contact{
+    width:90%;
+  }
+
+  #index-title{
+    font-size:30px;
+  }
+
+}

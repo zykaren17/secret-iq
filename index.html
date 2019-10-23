@@ -1,0 +1,103 @@
+<!-- Karen -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/AP.js"></script>
+</head>
+
+<body>
+  <!--
+    Image Source: https://cdn.pixabay.com/photo/2017/07/31/16/12/laptop-2558666_1280.jpg
+    Image Description: Landing Page Photo of Study Space
+   -->
+  <img id="home-pic" src="../www/images/home.jpg" alt="HOME">
+
+  <!--
+  Image Source: http://secretsmartiq.com/wp-content/uploads/2017/09/Official-Logo.png
+  Image Description: SecretIQ Logo
+-->
+<a href="index.html">
+  <img class="secretiq-logo" src="images/Official-Logo.png" alt="Company Logo">
+</a>
+
+<header class="home-header">
+  <nav>
+    <ul>
+      <li id="aboutNavItem" class="navItem">
+        <hr>
+        <a href="about.html">About</a>
+        <!--
+        Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+        Image Description: A pencil icon.
+      -->
+      <img id="about-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+      <hr>
+    </li>
+    <li id="resourcesNavItem" class="navItem">
+      <a id="resources" href="#">Resources</a>
+      <div class="cloud-drop hidden">
+        <!--
+        Image Source: https://www.clipartmax.com/png/middle/9-97860_cloud-outline-clip-art-at-clipart-library-cartoon-cloud-transparent-png.png
+        Image Description: Cartoon cloud with round shape.
+      -->
+      <img class="cloud" src="../www/images/cloud.png" alt="cloud">
+      <ul id="resourcesDropdown" class="nav-dropdown">
+        <li class="APItem"><a href="APWorld.html">AP World History</a></li>
+        <li class="APItem"><a href="APUSH.html">AP US History</a></li>
+      </ul>
+    </div>
+    <img id="resources-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+    <hr>
+  </li>
+  <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+<li id="forumNavItem" class="navItem">
+  <a href="forum.html">Forum</a>
+  <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+<img id="forum-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+<hr>
+</li>
+<li id="contactNavItem" class="navItem">
+  <a href="contact.html">Contact</a>
+  <!--
+  Image Source: https://image.flaticon.com/icons/svg/1040/1040228.svg
+  Image Description: A pencil icon.
+-->
+<img id="contact-pencil" class="pencil hidden" src="../www/images/pencil.png" alt="pencil">
+<hr>
+</li>
+</ul>
+</nav>
+</header>
+
+
+<h1 id="index-title">Acing the AP</h1>
+
+<h2 id="index-subtitle">Hundreds of Resources at Your Fingertips</h2>
+
+<form id="start-form" method="GET" action="./about.html">
+  <button class="button" type="submit">Let's Get Started!</button>
+</form>
+
+  <footer>
+    Credits:
+    <a href="http://secretsmartiq.com/wp-content/uploads/2017/09/Official-Logo.png">SecretIQ Logo</a>
+    <a href="https://image.flaticon.com/icons/svg/1040/1040228.svg">Pencil Icon</a>
+    <a href="https://www.clipartmax.com/png/middle/9-97860_cloud-outline-clip-art-at-clipart-library-cartoon-cloud-transparent-png.png">Cloud
+      Icon</a>
+    <a href="https://cdn.pixabay.com/photo/2017/07/31/16/12/laptop-2558666_1280.jpg">Study Background</a>
+  </footer>
+</body>
+
+</html>
